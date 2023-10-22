@@ -127,7 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="boats.cpp" />
+    <ClCompile Include="factory.cpp" />
+    <ClCompile Include="submarine.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sailboat.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boats.h" />
+    <ClInclude Include="factory.h" />
+    <ClInclude Include="submarine.h" />
+    <ClInclude Include="keeper.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="sailboat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
