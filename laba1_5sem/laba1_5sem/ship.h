@@ -1,12 +1,12 @@
 #pragma once
 #include <fstream>
-#include "factory.h"
+#include "ship.h"
 #include "keeper.h"
 using namespace std;
-class Factory
+class Ship
 {
 public:
-	Factory();
-	virtual ~Factory();
+	Ship();
+	virtual ~Ship();
 	virtual void setVal() = 0;
 };
