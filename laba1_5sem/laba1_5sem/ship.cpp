@@ -1,12 +1,12 @@
 #include "ship.h"
 #include <iostream>
 using namespace std;
-Factory::Factory()
+Ship::Ship()
 {
 
 	cout << "Âûçîâ êîíñòðóêòîðà (Àáñòðàêòíûé êëàññ)" << endl << endl;
 }
-Factory::~Factory()
+Ship::~Ship()
 {
 	cout << "Âûçîâ äåñòðóêòîðà (Àáñòðàêòíûé êëàññ)" << endl << endl;
 }
