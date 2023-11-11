@@ -47,20 +47,20 @@ ofstream& operator<<(ofstream& fout, Submarine& obj) { // Функция записи в файл 
 	return fout;
 }
 ifstream& operator>>(ifstream& fin, Submarine& obj) { // Функция чтения файла объекта (Мебель)
-		fin >> obj.lenght 
-			>> obj.weight
-			>> obj.crew
-			>> obj.time_underwater
-			>> obj.speed_underwater
-			>> obj.armament;
-			//>> obj.material
+	fin >> obj.lenght
+		>> obj.weight
+		>> obj.crew
+		>> obj.time_underwater
+		>> obj.speed_underwater
+		>> obj.armament;
+	//>> obj.material
 	return fin;
 }
 
 
 
 ostream& operator<<(ostream& out, Submarine& obj) { // Функция вывода на экран данных объекта(Мебель)
-		setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Russian");
 	out << "Длина: " << obj.lenght << endl; //лодка
 	out << "Ширина: " << obj.weight << endl; //лодка
 	out << "Экипаж: " << obj.crew << endl;  //лодка
@@ -72,8 +72,8 @@ ostream& operator<<(ostream& out, Submarine& obj) { // Функция вывода на экран д
 	return out;
 }
 istream& operator>>(istream& in, Submarine& obj) { // Функция ввода данных объекта (Мебель)
-		
-		setlocale(LC_ALL, "Russian");
+
+	setlocale(LC_ALL, "Russian");
 	cout << "Введите данные:" << endl << endl;
 
 	while (1) {
@@ -93,7 +93,7 @@ istream& operator>>(istream& in, Submarine& obj) { // Функция ввода данных объек
 		cin >> obj.weight;
 		if (cin.fail() || obj.weight < 0) {
 			cout << "Некорректные данные, введите заново!" << endl;
-				cin.clear();
+			cin.clear();
 			cin.ignore(10000, '\n');
 			continue;
 		}

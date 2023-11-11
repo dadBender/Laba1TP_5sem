@@ -8,7 +8,7 @@ using namespace std;
 template <class T>
 class Keeper {
 	T* ptr;
-		int size;
+	int size;
 public:
 	Keeper();
 	~Keeper();
@@ -113,7 +113,7 @@ void Keeper<T>::write(string s) { // Функция записи объекта в файл
 	}
 	catch (exception& error) {
 		cout << error.what() << endl;
-		
+
 	}
 }
 template<class T>

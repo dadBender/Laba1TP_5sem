@@ -8,7 +8,7 @@ Sailboat::Sailboat() {
 	type = "";
 	name = "";
 	peaceful_military = "";
-	
+
 	body_length = 0;
 	speed = 0;
 	crew = 0;
@@ -24,7 +24,7 @@ Sailboat::~Sailboat() {
 	cout << "Вызов деструктора (Парусник)" << endl << endl;
 }
 void Sailboat::setVal() {
-		cin >> *this;
+	cin >> *this;
 }
 Sailboat& Sailboat::operator=(const Sailboat& other) {
 	this->type = other.type;
@@ -56,27 +56,27 @@ ifstream& operator>>(ifstream& fin, Sailboat& obj) { // Функция чтения файла объ
 	return fin;
 }
 ostream& operator<<(ostream& out, Sailboat& obj) { // Функция вывода на экран данных объекта(Парусник)
-		setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Russian");
 	out << "Тип парусника: " << obj.type << endl;
 	out << "Название: " << obj.name << endl;
 	out << "Мирный или военный: " << obj.peaceful_military << endl;
 	out << "Длина корпуса: " << obj.body_length << endl << endl;
 	out << "Скорость пермещения: " << obj.speed << endl << endl;//добавил
 	out << "Экипаж: " << obj.crew << endl << endl;//добавил
-	
+
 	return out;
 }
 
-istream & operator>>(istream & in, Sailboat & obj) { // Функция ввода данных объекта (Парусник)
-		setlocale(LC_ALL, "Russian");
+istream& operator>>(istream& in, Sailboat& obj) { // Функция ввода данных объекта (Парусник)
+	setlocale(LC_ALL, "Russian");
 	cout << "Введите данные:" << endl << endl;
 	cout << "Тип парусника: ";
 	cin >> obj.type;
 	cout << "Название: ";
 	cin >> obj.name;
-	cout << "Мирный или военный: ";		
-	cin >> obj.peaceful_military;		
-	
+	cout << "Мирный или военный: ";
+	cin >> obj.peaceful_military;
+
 	while (1) {
 		cout << "Длина корпуса: ";
 		cin >> obj.body_length;
@@ -112,6 +112,6 @@ istream & operator>>(istream & in, Sailboat & obj) { // Функция ввода данных объ
 		}
 		break;
 	}
-	
+
 	return in;
 }

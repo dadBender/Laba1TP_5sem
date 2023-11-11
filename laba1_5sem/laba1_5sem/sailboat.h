@@ -12,9 +12,9 @@ private:
 	double body_length;
 	double speed;
 	double crew;
-	
+
 public:
-		Sailboat();
+	Sailboat();
 	~Sailboat();
 	Sailboat(const Sailboat&);
 	void setVal() override;

@@ -11,8 +11,8 @@ void menu(T& obj, string line) {
 	int c;
 	int i;
 	bool flag = true;
-	
-		setlocale(LC_ALL, "Russian");
+
+	setlocale(LC_ALL, "Russian");
 	while (flag) {
 		system("cls");
 		cout << "Выберите действие: " << endl << endl;
@@ -46,7 +46,7 @@ void menu(T& obj, string line) {
 			obj.display(); // Вывод объекта на экран
 			system("pause");
 			break;
-			
+
 		case 4:
 			obj.display();
 			cout << "Выберите для изменения: ";

@@ -22,7 +22,7 @@ boats::~boats() {
 	cout << "Вызов деструктора (Катер)" << endl << endl;
 }
 void boats::setVal() {
-		cin >> *this;
+	cin >> *this;
 }
 boats& boats::operator=(const boats& other) {
 	this->purpose = other.purpose;
@@ -43,16 +43,16 @@ ofstream& operator<<(ofstream& fout, boats& obj) { // Функция записи в файл объе
 	return fout;
 }
 ifstream& operator>>(ifstream& fin, boats& obj) { // Функция чтения файла объекта (Катер)
-		fin 
-			>> obj.purpose
-			>> obj.housing_material 
-			>> obj.driving_qualities
-			>> obj.speed
-			>> obj.capacity;
+	fin
+		>> obj.purpose
+		>> obj.housing_material
+		>> obj.driving_qualities
+		>> obj.speed
+		>> obj.capacity;
 	return fin;
 }
 ostream& operator<<(ostream& out, boats& obj) { // Функция вывода на экран данных объекта(Катер)
-		setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Russian");
 	out << "Назначение: " << obj.purpose << endl;
 	out << "Материал корпуса: " << obj.housing_material << endl;
 	out << "Ходовые качества: " << obj.driving_qualities << endl;
@@ -62,10 +62,10 @@ ostream& operator<<(ostream& out, boats& obj) { // Функция вывода на экран данны
 	return out;
 }
 istream& operator>>(istream& in, boats& obj) { // Функция ввода данных объекта (Катер)
-		setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Russian");
 	cout << "Введите данные:" << endl << endl;
 
-	cout << "Назначение:" ;
+	cout << "Назначение:";
 	getchar();
 	getline(cin, obj.purpose);
 
@@ -99,10 +99,10 @@ istream& operator>>(istream& in, boats& obj) { // Функция ввода данных объекта (
 		}
 		break;
 	}
-	
 
 
-	
-	
+
+
+
 	return in;
 }
