@@ -1,9 +1,9 @@
 #pragma once
 #include <fstream>
-#include "factory.h"
+#include "ship.h"
 #include "keeper.h"
 using namespace std;
-class boats : public Factory {
+class boats : public ship {
 private:
 	string purpose;
 	string housing_material;

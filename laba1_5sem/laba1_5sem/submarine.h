@@ -1,9 +1,9 @@
 #pragma once
 #include <fstream>
 #include "keeper.h"
-#include "factory.h"
+#include "ship.h"
 using namespace std;
-class Submarine : public Factory
+class Submarine : public ship
 {
 private:
 	double lenght;

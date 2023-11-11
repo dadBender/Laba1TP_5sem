@@ -128,14 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boats.cpp" />
-    <ClCompile Include="factory.cpp" />
+    <ClCompile Include="ship.cpp" />
     <ClCompile Include="submarine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sailboat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boats.h" />
-    <ClInclude Include="factory.h" />
+    <ClInclude Include="ship.h" />
     <ClInclude Include="submarine.h" />
     <ClInclude Include="keeper.h" />
     <ClInclude Include="menu.h" />

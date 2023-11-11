@@ -1,12 +1,12 @@
-#include "factory.h"
+#include "ship.h"
 #include <iostream>
 using namespace std;
-Factory::Factory()
+ship::ship()
 {
 
 	cout << "Вызов конструктора (Абстрактный класс)" << endl << endl;
 }
-Factory::~Factory()
+ship::~ship()
 {
 	cout << "Вызов деструктора (Абстрактный класс)" << endl << endl;
 }
