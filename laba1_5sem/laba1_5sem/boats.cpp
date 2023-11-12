@@ -17,6 +17,17 @@ boats::boats(const boats& other) {
 	cout << "Вызов конструктора копирования (Катер)" << endl << endl;
 	*this = other;
 }
+boats::boats(string purpose, string housing_material, string driving_qualities, int speed, int capacity, boats& obj)
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Вызов конструктора с параметром (Катер)" << endl << endl;
+	obj.purpose = purpose;
+	obj.housing_material = housing_material;
+	obj.driving_qualities = driving_qualities;
+	obj.speed = speed;
+	obj.speed = speed;
+	obj.capacity = capacity;
+}
 boats::~boats() {
 	setlocale(LC_ALL, "Russian");
 	cout << "Вызов деструктора (Катер)" << endl << endl;

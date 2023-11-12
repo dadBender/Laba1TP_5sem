@@ -14,6 +14,7 @@ public:
 	boats();
 	~boats();
 	boats(const boats&);
+	boats(string purpose, string housing_material,string driving_qualities, int speed, int capacity, boats& obj);
 	void setVal() override;
 	friend ofstream& operator << (ofstream& fout, boats& obj);
 	friend ifstream& operator >> (ifstream& fin, boats& obj);

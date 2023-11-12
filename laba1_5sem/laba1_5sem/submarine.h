@@ -16,6 +16,7 @@ private:
 public:
 	Submarine();
 	Submarine(const Submarine& other);
+	Submarine(double lenght, double weight, double crew, double time_underwater, double speed_underwater, string armament, Submarine& obj);
 	~Submarine();
 	void setVal() override;
 	friend ofstream& operator << (ofstream& fout, Submarine& obj);
