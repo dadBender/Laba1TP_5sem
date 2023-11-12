@@ -17,6 +17,7 @@ public:
 	Sailboat();
 	~Sailboat();
 	Sailboat(const Sailboat&);
+	Sailboat(string type,string name,string peaceful_military,double body_length,double speed,double crew, Sailboat& obj);
 	void setVal() override;
 	friend ofstream& operator << (ofstream& fout, Sailboat& obj);
 	friend ifstream& operator >> (ifstream& fin, Sailboat& obj);

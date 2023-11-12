@@ -2,6 +2,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+
+
 Sailboat::Sailboat() {
 	setlocale(LC_ALL, "Russian");
 	cout << "Вызов конструктора по умолчанию (Парусник)" << endl << endl;
@@ -18,6 +21,16 @@ Sailboat::Sailboat(const Sailboat& other) {
 	setlocale(LC_ALL, "Russian");
 	cout << "Вызов конструктора копирования (Парусник)" << endl << endl;
 	*this = other;
+}
+Sailboat::Sailboat(string type, string name, string peaceful_military, double body_length, double speed, double crew, Sailboat& obj) {
+	setlocale(LC_ALL, "Russian");
+	cout << "Вызов конструктора с параметром (Парусник)" << endl << endl;
+	obj.type = type;
+	obj.name = name;
+	obj.peaceful_military = peaceful_military;
+	obj.body_length = body_length;
+	obj.speed = speed;
+	obj.crew = crew;
 }
 Sailboat::~Sailboat() {
 	setlocale(LC_ALL, "Russian");

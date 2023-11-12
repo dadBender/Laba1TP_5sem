@@ -18,6 +18,19 @@ Submarine::Submarine(const Submarine& other) {
 	cout << "Вызов конструктора копирования (Подводная лодка)" << endl << endl;
 	*this = other;
 }
+
+Submarine::Submarine(double lenght, double weight, double crew, double time_underwater, double speed_underwater, string armament, Submarine& obj)
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Вызов конструктора с параметром (Подводная лодка)" << endl << endl;
+	obj.lenght = lenght;
+	obj.weight = weight;
+	obj.crew = crew;
+	obj.time_underwater = time_underwater;
+	obj.speed_underwater = speed_underwater;
+	obj.armament = armament;
+}
+
 Submarine::~Submarine() {
 	setlocale(LC_ALL, "Russian");
 	cout << "Вызов деструктора (Подводная лодка)" << endl << endl;
